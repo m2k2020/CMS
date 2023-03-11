@@ -60,3 +60,21 @@ def reports(request):
 
 
 #endregion
+
+#region Logs Section
+
+def erorlogs(request):
+    return render (request, "logs/erorlogs.html")
+
+def userlogs(request):
+    return render (request, "logs/userlogs.html")
+
+#endregion
+
+def userdisabled(request):
+    return render (request, "userdisabled.html")
+
+def userdeleted(request):
+    return render (request, "userdeleted.html")
+
+

@@ -2,13 +2,13 @@
 <div class="main-sidebar sidebar-style-2">
   <aside id="sidebar-wrapper">
     <div class="sidebar-brand">
-      <a href="index.html">
-        <img
+      <a href="{% url 'index' %}">
+        <!-- <img
           alt="image"
           src="{% static 'assets/img/logo.png' %}"
           class="header-logo"
-        />
-        <span class="logo-name">Otika</span>
+        /> -->
+        <span class="logo-name">DF-CMS</span>
       </a>
     </div>
     <ul class="sidebar-menu">
@@ -85,26 +85,26 @@
       <li class="menu-header">Logs</li>
 
       <li>
-        <a class="nav-link" href="timeline.html"
+        <a class="nav-link" href="{% url 'erorlogs' %}"
           ><i data-feather="x-circle"></i><span>Error Logs</span></a
         >
       </li>
       <li>
-        <a class="nav-link" href="timeline.html"
+        <a class="nav-link" href="{% url 'userlogs' %}"
           ><i data-feather="user-x"></i><span>User Logs</span></a
         >
       </li>
 
       <li class="menu-header">Trashes</li>
       <li>
-        <a class="nav-link" href="timeline.html"
+        <a class="nav-link" href="{%  url 'userdisabled' %}"
           ><i data-feather="user-minus"></i><span>User Disabled</span></a
         >
       </li>
 
       <li>
-        <a class="nav-link" href="vector-map.html"
-          ><i data-feather="trash-2"></i><span>Cases Deleted</span></a
+        <a class="nav-link" href="{%  url 'userdeleted' %}"
+          ><i data-feather="trash-2"></i><span>User Deleted</span></a
         >
       </li>
     </ul>

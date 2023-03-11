@@ -26,4 +26,18 @@ urlpatterns = [
     path("evidence/",views.evidence, name="evidence"),
     path("reports/",views.reports, name="reports"),
     #endregion
-]
+    
+    #region Logs
+    path("erorlogs/",views.erorlogs, name="erorlogs"),
+    path("userlogs/",views.userlogs, name="userlogs"),
+    #endregion
+
+    #region User Disabled
+    path("userdisabled/",views.userdisabled, name="userdisabled"),
+    path("userdeletd/",views.userdeleted, name="userdeleted"),
+
+
+
+    #endregion
+]  
+    
